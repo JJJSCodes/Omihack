@@ -1,6 +1,4 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import Navbar from './NavBar.js';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -19,9 +17,8 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-function App() {
+const NavBar = () => {
     const classes = useStyles();
-
     return ( <
         div className = { classes.root } >
         <
@@ -38,7 +35,7 @@ function App() {
         Toolbar > < /
         AppBar > < /
         div >
-    );
+    )
 }
 
-export default App;
+export default NavBar;
